@@ -12,8 +12,6 @@ for user in ondra vojta; do
     adduser --gecos "" "$user"
     usermod -aG docker "$user"
     usermod -aG sudo "$user"
-    echo "🔐 Please set password for $user:"
-    passwd "$user"
   fi
 done
 
